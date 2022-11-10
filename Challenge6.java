@@ -15,7 +15,7 @@ public class Challenge6 {
     
         int years =  (min / minutesinYear);
         int remainder = (365*years);
-        int days =  (min / 1440 ) - r;
+        int days =  (min / 1440 ) - remainder;
     
         System.out.println( min + " minutes is approximately " + years + " years and " + days + " days");
     
