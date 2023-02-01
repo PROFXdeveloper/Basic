@@ -5,21 +5,21 @@ public class Calculator {
     public static void main(String[]args){
 
 
-        Scanner scan = new Scanner(System.in);
+         Scanner scan = new Scanner(System.in);
         String repeat;
     do{
 
     
         System.out.println("Select operation to perform ");
 
-        String[] names = {"1. Add ","2. Subtraction ", "3. Mult." };
+        String[] names = {"1.Add. ","2.Sub. ","3.Mult.","4.Div." };
 
         for(int i = 0; i< names.length; i++){
 
             System.out.println(names[i]);
 
         }
-        System.out.println("");
+        System.out.println(" ");
         int operation = scan.nextInt();
 
         System.out.println("enter a no. ");
@@ -32,20 +32,26 @@ public class Calculator {
     
 
         if (operation == 1){
-            System.out.print("Answer ");
+            System.out.print("Answer = ");
             System.out.println(num1 + num2);
         }
         else if (operation == 2){
-            System.out.print("Answer ");
+            System.out.print("Answer = ");
             System.out.println(num1-num2);
 
         }
         else if (operation == 3){
-            System.out.print("Answer ");
+            System.out.print("Answer = ");
             System.out.println(num1*num2);
 
         }
       
+        else if (operation == 4){
+            System.out.print("Answer = ");
+            System.out.println(num1/num2);
+
+        }
+
         System.out.println("Repeat the operation y or n");
         repeat= scan.next();
 
@@ -56,4 +62,3 @@ public class Calculator {
     }
 
 }
-
